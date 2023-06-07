@@ -1,11 +1,13 @@
-# Global solutions - DEVOPS-TOOLS-CLOUD-COMPUTING
+# DEVOPS-TOOLS-CLOUD-COMPUTING
 
 ### Projeto que contém a API de um serviço de doações. 
 
 # Sumário
 - [Sobre](#sobre)
 
-- [Pitch](#pitch)
+- [Inicialização](#inicialização)
+
+- [Vídeo](#video)
 
 - [Figma](#figma)
   
@@ -20,7 +22,19 @@
 # Sobre:
 ### O Food Share,uma solução tecnológica para a gestão e distribuição de alimentos.O projeto visa solucionar o problema do desperdício de alimentos e a insegurança alimentar no Brasil. Dessa forma, o Food Share promove a doação e redistribuição de alimentos para pessoas em situação de vulnerabilidade. Para alcançar esse objetivo, foi desenvolvido um sistema integrado utilizando tecnologias como React Native, Spring Boot e OracleDatabase.
 
-# Pitch:
+# Inicialização:
+
+```
+git clone https://github.com/GlobalSolution-FoodShare/ENTERPRISE-APPLICATION-DEVELOPMENT.git
+```
+```
+cd ENTERPRISE-APPLICATION-DEVELOPMENT/foodshare
+```
+```
+docker compose up --build
+```
+
+# Vídeo:
 - [clique aqui]()  
 
 # Figma: 
@@ -37,7 +51,7 @@
 
 # Endpoints: 
 ### Neste link está estruturado todos os endpoints que serão utilizados na aplicação.
-### Documento: 
+### Swagger: 
 - [clique aqui](https://app.swaggerhub.com/apis-docs/LUANSSRR/Foodshare/1.0.0)
 
 # Diagrama de classes: 
@@ -51,5 +65,3 @@
 <div id="arquitetura-projeto" style="background-color: white; padding: 10px; border-radius: 10px;">
     <img src="" />
 </div>
-
-
