@@ -25,10 +25,10 @@
 # Inicialização:
 
 ```
-git clone https://github.com/GlobalSolution-FoodShare/ENTERPRISE-APPLICATION-DEVELOPMENT.git
+git clone https://github.com/GlobalSolution-FoodShare/DEVOPS-TOOLS-CLOUD-COMPUTING-.git
 ```
 ```
-cd ENTERPRISE-APPLICATION-DEVELOPMENT/foodshare
+cd DEVOPS-TOOLS-CLOUD-COMPUTING-/foodshare
 ```
 ```
 docker compose up --build
