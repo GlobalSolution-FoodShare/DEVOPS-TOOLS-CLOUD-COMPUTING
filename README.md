@@ -35,7 +35,7 @@ docker compose up --build
 ```
 
 # Vídeo:
-- [clique aqui]()  
+- [clique aqui](https://youtu.be/MYPj1e3RcDY)  
 
 # Figma: 
 ### Representação visual do projeto com a parte da UX e interação do usuário.

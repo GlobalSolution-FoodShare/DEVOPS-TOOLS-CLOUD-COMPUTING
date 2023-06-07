@@ -1,0 +1,6284 @@
+{
+	"info": {
+		"_postman_id": "6b2775f1-2b3b-4250-aedc-48bf2c6b7812",
+		"name": "Foodshare",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23680501"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Registrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"reis@loco.com.br\",\r\n    \"senha\": \"123123213131\",\r\n    \"cliente\": 6\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/registrar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"registrar"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Registrar",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"TESTE@loco.com.br\",\r\n    \"senha\": \"123123213131\",\r\n    \"cliente\": 16\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/registrar",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"registrar"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:10:01 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 42,\n    \"cliente\": 16,\n    \"email\": \"TESTE@loco.com.br\"\n}"
+						},
+						{
+							"name": "Registrar",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"TESTE@loco.com.br\",\r\n    \"senha\": \"123123213131\",\r\n    \"cliente\": 16\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/registrar",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"registrar"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:10:06 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Logar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"reis@loco.com.br\",\r\n    \"senha\": \"sen3ha123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/login",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Logar",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"reis@loco.com.br\",\r\n    \"senha\": \"123123213131\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/login",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:10:18 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyZWlzQGxvY28uY29tLmJyIiwiaXNzIjoiRm9vZFNoYXJlMTAiLCJleHAiOjE2ODYxNTA2MTh9.kYvqxBh3nu020YheQBRdj9n94xYFi4A6zIfXgWxUT4o\",\n    \"type\": \"JWT\",\n    \"prefix\": \"Bearer\",\n    \"ultimoAcesso\": \"2023-06-07T11:10:18.5099294\",\n    \"cliente\": 6\n}"
+						},
+						{
+							"name": "Logar",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"reis@loco.com.br\",\r\n    \"senha\": \"123123213131\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/login",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:10:23 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"luan.reis@fiap.com.br\",\r\n    \"senha\": \"sen3ha123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/atualizar/reisloco@",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"atualizar",
+								"reisloco@"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Atualizar",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"reis@loco.com.br\",\r\n    \"senha\": \"sen3ha123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/atualizar/reis@loco.com.br",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"atualizar",
+										"reis@loco.com.br"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Disposition",
+									"value": "inline;filename=f.txt"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:11:32 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"cliente\": 6,\n    \"email\": \"reis@loco.com.br\"\n}"
+						},
+						{
+							"name": "Atualizar",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"luan.reis@fiap.com.br\",\r\n    \"senha\": \"sen3ha123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/atualizar/reisloco@",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"atualizar",
+										"reisloco@"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:11:44 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "ValidaToken",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyZWlzQGxvY28uY29tLmJyIiwiaXNzIjoiRm9vZFNoYXJlMTAiLCJleHAiOjE2ODYxNTA3Njh9.L0BHNWOeY3kUPUbD4jbajfWc3-yaCDQeCQqONGsTP5g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/validar-token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"validar-token"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ValidaToken",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/validar-token",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"validar-token"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:12:02 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "ValidaToken",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/validar-token",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"validar-token"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:13:00 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Cliente/Doador/Receptor",
+			"item": [
+				{
+					"name": "BuscarPorDistancia/raio?latitude={latitude}&longitude={longitude}&raio={raio}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyZWlzQGxvY28uY29tLmJyIiwiaXNzIjoiRm9vZFNoYXJlMTAiLCJleHAiOjE2ODYxNTA0ODd9.ZETxUMxUd9BqTSonBTUyXritqw2jFXSHOVUbq2j3Ilo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/cliente/raio?latitude=-23.56500988161549&longitude=-32131313132&raio=10",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cliente",
+								"raio"
+							],
+							"query": [
+								{
+									"key": "latitude",
+									"value": "-23.56500988161549"
+								},
+								{
+									"key": "longitude",
+									"value": "-32131313132"
+								},
+								{
+									"key": "raio",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "BuscarPorDistancia/raio?latitude={latitude}&longitude={longitude}&raio={raio}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/cliente/raio?latitude=-23.56500988161549&longitude=-46.64297103881836&raio=10",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"cliente",
+										"raio"
+									],
+									"query": [
+										{
+											"key": "latitude",
+											"value": "-23.56500988161549"
+										},
+										{
+											"key": "longitude",
+											"value": "-46.64297103881836"
+										},
+										{
+											"key": "raio",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:08:20 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "BuscarPorDistancia/raio?latitude={latitude}&longitude={longitude}&raio={raio}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/cliente/raio?latitude=-23.56500988161549&longitude=-46.64297103881836&raio=10",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"cliente",
+										"raio"
+									],
+									"query": [
+										{
+											"key": "latitude",
+											"value": "-23.56500988161549"
+										},
+										{
+											"key": "longitude",
+											"value": "-46.64297103881836"
+										},
+										{
+											"key": "raio",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:08:31 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 12,\n        \"cpf\": \"132.555.114-91\",\n        \"nomeCompleto\": \"Luan Reis\",\n        \"perfil\": \"RECEPTOR\",\n        \"email\": null,\n        \"endereco\": {\n            \"id\": 10,\n            \"cliente\": 12,\n            \"logradouro\": \"Rua Principal\",\n            \"bairro\": \"Centro\",\n            \"numero\": \"123\",\n            \"complemento\": \"Apt 456\",\n            \"cidade\": \"São Paulo\",\n            \"estado\": \"São Paulo\",\n            \"uf\": \"SP\",\n            \"cep\": \"01234-567\",\n            \"latitude\": -23.59277851910607,\n            \"longitude\": -46.65309906005859\n        }\n    },\n    {\n        \"id\": 1,\n        \"cpf\": \"123.456.789-00\",\n        \"nomeCompleto\": \"Nome do Doador\",\n        \"perfil\": \"RECEPTOR\",\n        \"email\": \"reis2@loco.com.br\",\n        \"endereco\": {\n            \"id\": 1,\n            \"cliente\": 1,\n            \"logradouro\": \"Rua Principal\",\n            \"bairro\": \"Centro\",\n            \"numero\": \"123\",\n            \"complemento\": \"Apt 456\",\n            \"cidade\": \"São Paulo\",\n            \"estado\": \"São Paulo\",\n            \"uf\": \"SP\",\n            \"cep\": \"01234-567\",\n            \"latitude\": -23.56513772520115,\n            \"longitude\": -46.64505243301392\n        }\n    },\n    {\n        \"id\": 7,\n        \"cpf\": \"111.191.111-91\",\n        \"nomeCompleto\": \"Luan Reis\",\n        \"perfil\": \"RECEPTOR\",\n        \"email\": null,\n        \"endereco\": {\n            \"id\": 5,\n            \"cliente\": 7,\n            \"logradouro\": \"Rua Principal\",\n            \"bairro\": \"Centro\",\n            \"numero\": \"123\",\n            \"complemento\": \"Apt 456\",\n            \"cidade\": \"São Paulo\",\n            \"estado\": \"São Paulo\",\n            \"uf\": \"SP\",\n            \"cep\": \"01234-567\",\n            \"latitude\": -23.5640461336579,\n            \"longitude\": -46.64485931396484\n        }\n    },\n    {\n        \"id\": 8,\n        \"cpf\": \"111.191.114-91\",\n        \"nomeCompleto\": \"Luan Reis\",\n        \"perfil\": \"RECEPTOR\",\n        \"email\": null,\n        \"endereco\": {\n            \"id\": 6,\n            \"cliente\": 8,\n            \"logradouro\": \"Rua Principal\",\n            \"bairro\": \"Centro\",\n            \"numero\": \"123\",\n            \"complemento\": \"Apt 456\",\n            \"cidade\": \"São Paulo\",\n            \"estado\": \"São Paulo\",\n            \"uf\": \"SP\",\n            \"cep\": \"01234-567\",\n            \"latitude\": -23.56387895217013,\n            \"longitude\": -46.64857149124146\n        }\n    },\n    {\n        \"id\": 9,\n        \"cpf\": \"333.191.114-91\",\n        \"nomeCompleto\": \"Luan Reis\",\n        \"perfil\": \"RECEPTOR\",\n        \"email\": null,\n        \"endereco\": {\n            \"id\": 7,\n            \"cliente\": 9,\n            \"logradouro\": \"Rua Principal\",\n            \"bairro\": \"Centro\",\n            \"numero\": \"123\",\n            \"complemento\": \"Apt 456\",\n            \"cidade\": \"São Paulo\",\n            \"estado\": \"São Paulo\",\n            \"uf\": \"SP\",\n            \"cep\": \"01234-567\",\n            \"latitude\": -23.56621947363778,\n            \"longitude\": -46.64432287216187\n        }\n    },\n    {\n        \"id\": 11,\n        \"cpf\": \"222.555.114-91\",\n        \"nomeCompleto\": \"Luan Reis\",\n        \"perfil\": \"RECEPTOR\",\n        \"email\": null,\n        \"endereco\": {\n            \"id\": 9,\n            \"cliente\": 11,\n            \"logradouro\": \"Rua Principal\",\n            \"bairro\": \"Centro\",\n            \"numero\": \"123\",\n            \"complemento\": \"Apt 456\",\n            \"cidade\": \"São Paulo\",\n            \"estado\": \"São Paulo\",\n            \"uf\": \"SP\",\n            \"cep\": \"01234-567\",\n            \"latitude\": -23.58648585826123,\n            \"longitude\": -46.6201400756836\n        }\n    },\n    {\n        \"id\": 14,\n        \"cpf\": \"132.555.333-91\",\n        \"nomeCompleto\": \"Luan Reis\",\n        \"perfil\": \"RECEPTOR\",\n        \"email\": null,\n        \"endereco\": {\n            \"id\": 11,\n            \"cliente\": 14,\n            \"logradouro\": \"Rua Principal\",\n            \"bairro\": \"Centro\",\n            \"numero\": \"123\",\n            \"complemento\": \"Apt 456\",\n            \"cidade\": \"São Paulo\",\n            \"estado\": \"São Paulo\",\n            \"uf\": \"SP\",\n            \"cep\": \"01234-567\",\n            \"latitude\": -23.59938548815875,\n            \"longitude\": -46.56623840332032\n        }\n    },\n    {\n        \"id\": 15,\n        \"cpf\": \"132.555.333-11\",\n        \"nomeCompleto\": \"Luan Reis\",\n        \"perfil\": \"RECEPTOR\",\n        \"email\": null,\n        \"endereco\": {\n            \"id\": 12,\n            \"cliente\": 15,\n            \"logradouro\": \"Rua Principal\",\n            \"bairro\": \"Centro\",\n            \"numero\": \"123\",\n            \"complemento\": \"Apt 456\",\n            \"cidade\": \"São Paulo\",\n            \"estado\": \"São Paulo\",\n            \"uf\": \"SP\",\n            \"cep\": \"01234-567\",\n            \"latitude\": -23.59356508049124,\n            \"longitude\": -46.59095764160156\n        }\n    },\n    {\n        \"id\": 10,\n        \"cpf\": \"111.555.114-91\",\n        \"nomeCompleto\": \"Luan Reis\",\n        \"perfil\": \"RECEPTOR\",\n        \"email\": null,\n        \"endereco\": {\n            \"id\": 8,\n            \"cliente\": 10,\n            \"logradouro\": \"Rua Principal\",\n            \"bairro\": \"Centro\",\n            \"numero\": \"123\",\n            \"complemento\": \"Apt 456\",\n            \"cidade\": \"São Paulo\",\n            \"estado\": \"São Paulo\",\n            \"uf\": \"SP\",\n            \"cep\": \"01234-567\",\n            \"latitude\": -23.56921882043507,\n            \"longitude\": -46.64358258247376\n        }\n    }\n]"
+						},
+						{
+							"name": "BuscarPorDistancia/raio?latitude={latitude}&longitude={longitude}&raio={raio}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/cliente/raio?latitude=-23.56500988161549&longitude=-32131313132&raio=10",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"cliente",
+										"raio"
+									],
+									"query": [
+										{
+											"key": "latitude",
+											"value": "-23.56500988161549"
+										},
+										{
+											"key": "longitude",
+											"value": "-32131313132"
+										},
+										{
+											"key": "raio",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:08:41 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[]"
+						}
+					]
+				},
+				{
+					"name": "Buscar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/cliente?page=0&size=5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cliente"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Buscar",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/cliente?page=0&size=5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"cliente"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "0"
+										},
+										{
+											"key": "size",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:09:22 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Buscar",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/cliente?page=0&size=5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"cliente"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "0"
+										},
+										{
+											"key": "size",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:09:31 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"content\": [\n        {\n            \"id\": 12,\n            \"cpf\": \"132.555.114-91\",\n            \"nomeCompleto\": \"Luan Reis\",\n            \"perfil\": \"RECEPTOR\",\n            \"email\": null,\n            \"endereco\": {\n                \"id\": 10,\n                \"cliente\": 12,\n                \"logradouro\": \"Rua Principal\",\n                \"bairro\": \"Centro\",\n                \"numero\": \"123\",\n                \"complemento\": \"Apt 456\",\n                \"cidade\": \"São Paulo\",\n                \"estado\": \"São Paulo\",\n                \"uf\": \"SP\",\n                \"cep\": \"01234-567\",\n                \"latitude\": -23.59277851910607,\n                \"longitude\": -46.65309906005859\n            }\n        },\n        {\n            \"id\": 21,\n            \"cpf\": \"341.937.700-85\",\n            \"nomeCompleto\": \"Henrique\",\n            \"perfil\": \"DOADOR\",\n            \"email\": \"matue@gmail.com.br\",\n            \"endereco\": {\n                \"id\": 21,\n                \"cliente\": 21,\n                \"logradouro\": \"Av.josé Júlio\",\n                \"bairro\": \"Jaguaribe\",\n                \"numero\": \"523\",\n                \"complemento\": \"Apt 63 bloco 1\",\n                \"cidade\": \"São Paulo\",\n                \"estado\": \"São Paulo\",\n                \"uf\": \"SP\",\n                \"cep\": \"06050-300\",\n                \"latitude\": -57.5613357,\n                \"longitude\": -46.7864117\n            }\n        },\n        {\n            \"id\": 1,\n            \"cpf\": \"123.456.789-00\",\n            \"nomeCompleto\": \"Nome do Doador\",\n            \"perfil\": \"RECEPTOR\",\n            \"email\": \"reis2@loco.com.br\",\n            \"endereco\": {\n                \"id\": 1,\n                \"cliente\": 1,\n                \"logradouro\": \"Rua Principal\",\n                \"bairro\": \"Centro\",\n                \"numero\": \"123\",\n                \"complemento\": \"Apt 456\",\n                \"cidade\": \"São Paulo\",\n                \"estado\": \"São Paulo\",\n                \"uf\": \"SP\",\n                \"cep\": \"01234-567\",\n                \"latitude\": -23.56513772520115,\n                \"longitude\": -46.64505243301392\n            }\n        },\n        {\n            \"id\": 2,\n            \"cpf\": \"111.731.121-91\",\n            \"nomeCompleto\": \"Luan Reis\",\n            \"perfil\": \"DOADOR\",\n            \"email\": null,\n            \"endereco\": {\n                \"id\": 2,\n                \"cliente\": 2,\n                \"logradouro\": \"Rua Principal\",\n                \"bairro\": \"Centro\",\n                \"numero\": \"123\",\n                \"complemento\": \"Apt 456\",\n                \"cidade\": \"São Paulo\",\n                \"estado\": \"São Paulo\",\n                \"uf\": \"SP\",\n                \"cep\": \"01234-567\",\n                \"latitude\": -23.56500988161549,\n                \"longitude\": -46.64297103881836\n            }\n        },\n        {\n            \"id\": 4,\n            \"cpf\": \"111.791.121-91\",\n            \"nomeCompleto\": \"Luan Reis\",\n            \"perfil\": \"DOADOR\",\n            \"email\": null,\n            \"endereco\": {\n                \"id\": 3,\n                \"cliente\": 4,\n                \"logradouro\": \"Rua Principal\",\n                \"bairro\": \"Centro\",\n                \"numero\": \"123\",\n                \"complemento\": \"Apt 456\",\n                \"cidade\": \"São Paulo\",\n                \"estado\": \"São Paulo\",\n                \"uf\": \"SP\",\n                \"cep\": \"01234-567\",\n                \"latitude\": -23.56500988161549,\n                \"longitude\": -46.64297103881836\n            }\n        }\n    ],\n    \"pageable\": {\n        \"sort\": {\n            \"empty\": true,\n            \"sorted\": false,\n            \"unsorted\": true\n        },\n        \"offset\": 0,\n        \"pageSize\": 5,\n        \"pageNumber\": 0,\n        \"unpaged\": false,\n        \"paged\": true\n    },\n    \"last\": false,\n    \"totalElements\": 16,\n    \"totalPages\": 4,\n    \"size\": 5,\n    \"sort\": {\n        \"empty\": true,\n        \"sorted\": false,\n        \"unsorted\": true\n    },\n    \"first\": true,\n    \"numberOfElements\": 5,\n    \"number\": 0,\n    \"empty\": false\n}"
+						}
+					]
+				},
+				{
+					"name": "Buscar/{ID}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyZWlzQGxvY28uY29tLmJyIiwiaXNzIjoiRm9vZFNoYXJlMTAiLCJleHAiOjE2ODYxMTg0NzZ9.H4BURPKi4d4WEm9P69iOA-ghc3zMBC1qDNVvAfpubeI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/cliente/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cliente",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Registrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cpf\": \"111.231.333-11\",\r\n    \"nomeCompleto\": \"Luan Reis\",\r\n    \"perfil\": \"DOADOR\",\r\n    \"endereco\": {\r\n        \"cep\": \"01234-567\",\r\n        \"bairro\": \"Centro\",\r\n        \"logradouro\": \"Rua Principal\",\r\n        \"numero\": \"123\",\r\n        \"complemento\": \"Apt 456\",\r\n        \"cidade\": \"São Paulo\",\r\n        \"estado\": \"São Paulo\",\r\n        \"uf\": \"SP\",\r\n        \"latitude\": -23.848161991218262,\r\n        \"longitude\": -46.13983154296876\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/cliente/registrar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cliente",
+								"registrar"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Registrar",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"cpf\": \"113.231.333-11\",\r\n    \"nomeCompleto\": \"Luan Reis\",\r\n    \"perfil\": \"DOADOR\",\r\n    \"endereco\": {\r\n        \"cep\": \"01234-567\",\r\n        \"bairro\": \"Centro\",\r\n        \"logradouro\": \"Rua Principal\",\r\n        \"numero\": \"123\",\r\n        \"complemento\": \"Apt 456\",\r\n        \"cidade\": \"São Paulo\",\r\n        \"estado\": \"São Paulo\",\r\n        \"uf\": \"SP\",\r\n        \"latitude\": -23.848161991218262,\r\n        \"longitude\": -46.13983154296876\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/cliente/registrar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"cliente",
+										"registrar"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:04:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"field\": \"error\",\n        \"message\": \"ORA-00001: restrição exclusiva (RM94898.UK4RBOVSXOWUMAPE7PT4KHUFSSP) violada\\n\"\n    }\n]"
+						},
+						{
+							"name": "Registrar",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"cpf\": \"111.231.333-11\",\r\n    \"nomeCompleto\": \"Luan Reis\",\r\n    \"perfil\": \"DOADOR\",\r\n    \"endereco\": {\r\n        \"cep\": \"01234-567\",\r\n        \"bairro\": \"Centro\",\r\n        \"logradouro\": \"Rua Principal\",\r\n        \"numero\": \"123\",\r\n        \"complemento\": \"Apt 456\",\r\n        \"cidade\": \"São Paulo\",\r\n        \"estado\": \"São Paulo\",\r\n        \"uf\": \"SP\",\r\n        \"latitude\": -23.848161991218262,\r\n        \"longitude\": -46.13983154296876\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/cliente/registrar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"cliente",
+										"registrar"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:05:08 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 43,\n    \"cpf\": \"111.231.333-11\",\n    \"nomeCompleto\": \"Luan Reis\",\n    \"perfil\": \"DOADOR\",\n    \"email\": null,\n    \"endereco\": {\n        \"id\": 42,\n        \"cliente\": 43,\n        \"logradouro\": \"Rua Principal\",\n        \"bairro\": \"Centro\",\n        \"numero\": \"123\",\n        \"complemento\": \"Apt 456\",\n        \"cidade\": \"São Paulo\",\n        \"estado\": \"São Paulo\",\n        \"uf\": \"SP\",\n        \"cep\": \"01234-567\",\n        \"latitude\": -23.848161991218262,\n        \"longitude\": -46.13983154296876\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Atualizar/{ID}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyZWlzQGxvY28uY29tLmJyIiwiaXNzIjoiRm9vZFNoYXJlMTAiLCJleHAiOjE2ODYxNTAzMjl9.OnigcDI2jF9nE8PmIe-2szVlAXXA_NN0UvHR_fYE-OM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"cpf\": \"123.456.789-00\",\r\n    \"nomeCompleto\": \"Nome do Doador\",\r\n    \"perfil\": \"DOADOR\",\r\n    \"endereco\": {\r\n        \"id\": 1,\r\n        \"cliente\": 1,\r\n        \"cep\": \"01234-567\",\r\n        \"bairro\": \"Centro\",\r\n        \"logradouro\": \"Rua Principal\",\r\n        \"numero\": \"123\",\r\n        \"complemento\": \"Apt 456\",\r\n        \"cidade\": \"São Paulo\",\r\n        \"estado\": \"São Paulo\",\r\n        \"uf\": \"SP\",\r\n        \"latitude\": -23.565137725201154,\r\n        \"longitude\": -46.645052433013916\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/cliente/13321",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cliente",
+								"13321"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Atualizar/{ID}",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"cpf\": \"123.456.789-00\",\r\n    \"nomeCompleto\": \"Nome do Doador\",\r\n    \"perfil\": \"DOADOR\",\r\n    \"endereco\": {\r\n        \"id\": 1,\r\n        \"cliente\": 1,\r\n        \"cep\": \"01234-567\",\r\n        \"bairro\": \"Centro\",\r\n        \"logradouro\": \"Rua Principal\",\r\n        \"numero\": \"123\",\r\n        \"complemento\": \"Apt 456\",\r\n        \"cidade\": \"São Paulo\",\r\n        \"estado\": \"São Paulo\",\r\n        \"uf\": \"SP\",\r\n        \"latitude\": -23.565137725201154,\r\n        \"longitude\": -46.645052433013916\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/cliente/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"cliente",
+										"1"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:05:22 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Atualizar/{ID}",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"cpf\": \"123.456.789-00\",\r\n    \"nomeCompleto\": \"Nome do Doador\",\r\n    \"perfil\": \"DOADOR\",\r\n    \"endereco\": {\r\n        \"id\": 1,\r\n        \"cliente\": 1,\r\n        \"cep\": \"01234-567\",\r\n        \"bairro\": \"Centro\",\r\n        \"logradouro\": \"Rua Principal\",\r\n        \"numero\": \"123\",\r\n        \"complemento\": \"Apt 456\",\r\n        \"cidade\": \"São Paulo\",\r\n        \"estado\": \"São Paulo\",\r\n        \"uf\": \"SP\",\r\n        \"latitude\": -23.565137725201154,\r\n        \"longitude\": -46.645052433013916\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/cliente/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"cliente",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:05:42 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"cpf\": \"123.456.789-00\",\n    \"nomeCompleto\": \"Nome do Doador\",\n    \"perfil\": \"RECEPTOR\",\n    \"email\": \"reis2@loco.com.br\",\n    \"endereco\": {\n        \"id\": 1,\n        \"cliente\": 1,\n        \"logradouro\": \"Rua Principal\",\n        \"bairro\": \"Centro\",\n        \"numero\": \"123\",\n        \"complemento\": \"Apt 456\",\n        \"cidade\": \"São Paulo\",\n        \"estado\": \"São Paulo\",\n        \"uf\": \"SP\",\n        \"cep\": \"01234-567\",\n        \"latitude\": -23.565137725201154,\n        \"longitude\": -46.645052433013916\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Deletar/{ID}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyZWlzQGxvY28uY29tLmJyIiwiaXNzIjoiRm9vZFNoYXJlMTAiLCJleHAiOjE2ODYxNTAzMjl9.OnigcDI2jF9nE8PmIe-2szVlAXXA_NN0UvHR_fYE-OM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/cliente/17",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"cliente",
+								"17"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Deletar/{ID}",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/cliente/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"cliente",
+										"1"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:06:15 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Deletar/{ID}",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/cliente/17",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"cliente",
+										"17"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:07:54 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Solicitacao",
+			"item": [
+				{
+					"name": "buscarTodos",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyZWlzQGxvY28uY29tLmJyIiwiaXNzIjoiRm9vZFNoYXJlMTAiLCJleHAiOjE2ODYxNTA3Njh9.L0BHNWOeY3kUPUbD4jbajfWc3-yaCDQeCQqONGsTP5g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/solicitacoes?page=0&size=5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"solicitacoes"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "buscarTodos",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/solicitacoes?page=0&size=5",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"solicitacoes"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "0"
+										},
+										{
+											"key": "size",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:13:38 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "buscarTodos",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/solicitacoes?page=0&size=5",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"solicitacoes"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "0"
+										},
+										{
+											"key": "size",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:13:45 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"content\": [\n        {\n            \"id\": 2,\n            \"receptor\": 1,\n            \"data\": \"2023-06-06T16:40:03.262401\",\n            \"solicitacaoProduto\": [\n                {\n                    \"id\": 3,\n                    \"produto\": {\n                        \"id\": 1,\n                        \"nome\": \"Pacote de Arroz\",\n                        \"peso\": 10,\n                        \"descricao\": \"Descrição do Arroz\"\n                    },\n                    \"quantidade\": 3,\n                    \"jaFoiDoado\": true\n                },\n                {\n                    \"id\": 4,\n                    \"produto\": {\n                        \"id\": 2,\n                        \"nome\": \"Feijão\",\n                        \"peso\": 1,\n                        \"descricao\": \"Descrição do Feijão\"\n                    },\n                    \"quantidade\": 2,\n                    \"jaFoiDoado\": false\n                }\n            ],\n            \"status\": \"Aguardando\"\n        },\n        {\n            \"id\": 3,\n            \"receptor\": 10,\n            \"data\": \"2023-06-06T18:18:29.359378\",\n            \"solicitacaoProduto\": [\n                {\n                    \"id\": 5,\n                    \"produto\": {\n                        \"id\": 1,\n                        \"nome\": \"Pacote de Arroz\",\n                        \"peso\": 10,\n                        \"descricao\": \"Descrição do Arroz\"\n                    },\n                    \"quantidade\": 3,\n                    \"jaFoiDoado\": true\n                },\n                {\n                    \"id\": 6,\n                    \"produto\": {\n                        \"id\": 2,\n                        \"nome\": \"Feijão\",\n                        \"peso\": 1,\n                        \"descricao\": \"Descrição do Feijão\"\n                    },\n                    \"quantidade\": 2,\n                    \"jaFoiDoado\": true\n                }\n            ],\n            \"status\": \"Aguardando\"\n        },\n        {\n            \"id\": 41,\n            \"receptor\": 10,\n            \"data\": \"2023-06-06T22:16:36.149569\",\n            \"solicitacaoProduto\": [\n                {\n                    \"id\": 61,\n                    \"produto\": {\n                        \"id\": 1,\n                        \"nome\": \"Pacote de Arroz\",\n                        \"peso\": 10,\n                        \"descricao\": \"Descrição do Arroz\"\n                    },\n                    \"quantidade\": 3,\n                    \"jaFoiDoado\": true\n                },\n                {\n                    \"id\": 62,\n                    \"produto\": {\n                        \"id\": 2,\n                        \"nome\": \"Feijão\",\n                        \"peso\": 1,\n                        \"descricao\": \"Descrição do Feijão\"\n                    },\n                    \"quantidade\": 2,\n                    \"jaFoiDoado\": true\n                }\n            ],\n            \"status\": \"Aguardando\"\n        },\n        {\n            \"id\": 61,\n            \"receptor\": 10,\n            \"data\": \"2023-06-07T01:23:19.175274\",\n            \"solicitacaoProduto\": [\n                {\n                    \"id\": 81,\n                    \"produto\": {\n                        \"id\": 1,\n                        \"nome\": \"Pacote de Arroz\",\n                        \"peso\": 10,\n                        \"descricao\": \"Descrição do Arroz\"\n                    },\n                    \"quantidade\": 3,\n                    \"jaFoiDoado\": true\n                },\n                {\n                    \"id\": 82,\n                    \"produto\": {\n                        \"id\": 2,\n                        \"nome\": \"Feijão\",\n                        \"peso\": 1,\n                        \"descricao\": \"Descrição do Feijão\"\n                    },\n                    \"quantidade\": 2,\n                    \"jaFoiDoado\": true\n                }\n            ],\n            \"status\": \"Aguardando\"\n        },\n        {\n            \"id\": 62,\n            \"receptor\": 10,\n            \"data\": \"2023-06-07T01:41:03.339521\",\n            \"solicitacaoProduto\": [\n                {\n                    \"id\": 83,\n                    \"produto\": {\n                        \"id\": 1,\n                        \"nome\": \"Pacote de Arroz\",\n                        \"peso\": 10,\n                        \"descricao\": \"Descrição do Arroz\"\n                    },\n                    \"quantidade\": 3,\n                    \"jaFoiDoado\": true\n                },\n                {\n                    \"id\": 84,\n                    \"produto\": {\n                        \"id\": 2,\n                        \"nome\": \"Feijão\",\n                        \"peso\": 1,\n                        \"descricao\": \"Descrição do Feijão\"\n                    },\n                    \"quantidade\": 2,\n                    \"jaFoiDoado\": true\n                }\n            ],\n            \"status\": \"Aguardando\"\n        }\n    ],\n    \"pageable\": {\n        \"sort\": {\n            \"empty\": true,\n            \"sorted\": false,\n            \"unsorted\": true\n        },\n        \"offset\": 0,\n        \"pageSize\": 5,\n        \"pageNumber\": 0,\n        \"unpaged\": false,\n        \"paged\": true\n    },\n    \"last\": false,\n    \"totalElements\": 40,\n    \"totalPages\": 8,\n    \"size\": 5,\n    \"sort\": {\n        \"empty\": true,\n        \"sorted\": false,\n        \"unsorted\": true\n    },\n    \"first\": true,\n    \"numberOfElements\": 5,\n    \"number\": 0,\n    \"empty\": false\n}"
+						},
+						{
+							"name": "buscarTodos",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/solicitacoes?page=0&size=5",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"solicitacoes"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "0"
+										},
+										{
+											"key": "size",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:14:05 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"content\": [\n        {\n            \"id\": 2,\n            \"receptor\": 1,\n            \"data\": \"2023-06-06T16:40:03.262401\",\n            \"solicitacaoProduto\": [\n                {\n                    \"id\": 3,\n                    \"produto\": {\n                        \"id\": 1,\n                        \"nome\": \"Pacote de Arroz\",\n                        \"peso\": 10,\n                        \"descricao\": \"Descrição do Arroz\"\n                    },\n                    \"quantidade\": 3,\n                    \"jaFoiDoado\": true\n                },\n                {\n                    \"id\": 4,\n                    \"produto\": {\n                        \"id\": 2,\n                        \"nome\": \"Feijão\",\n                        \"peso\": 1,\n                        \"descricao\": \"Descrição do Feijão\"\n                    },\n                    \"quantidade\": 2,\n                    \"jaFoiDoado\": false\n                }\n            ],\n            \"status\": \"Aguardando\"\n        },\n        {\n            \"id\": 3,\n            \"receptor\": 10,\n            \"data\": \"2023-06-06T18:18:29.359378\",\n            \"solicitacaoProduto\": [\n                {\n                    \"id\": 5,\n                    \"produto\": {\n                        \"id\": 1,\n                        \"nome\": \"Pacote de Arroz\",\n                        \"peso\": 10,\n                        \"descricao\": \"Descrição do Arroz\"\n                    },\n                    \"quantidade\": 3,\n                    \"jaFoiDoado\": true\n                },\n                {\n                    \"id\": 6,\n                    \"produto\": {\n                        \"id\": 2,\n                        \"nome\": \"Feijão\",\n                        \"peso\": 1,\n                        \"descricao\": \"Descrição do Feijão\"\n                    },\n                    \"quantidade\": 2,\n                    \"jaFoiDoado\": true\n                }\n            ],\n            \"status\": \"Aguardando\"\n        },\n        {\n            \"id\": 41,\n            \"receptor\": 10,\n            \"data\": \"2023-06-06T22:16:36.149569\",\n            \"solicitacaoProduto\": [\n                {\n                    \"id\": 61,\n                    \"produto\": {\n                        \"id\": 1,\n                        \"nome\": \"Pacote de Arroz\",\n                        \"peso\": 10,\n                        \"descricao\": \"Descrição do Arroz\"\n                    },\n                    \"quantidade\": 3,\n                    \"jaFoiDoado\": true\n                },\n                {\n                    \"id\": 62,\n                    \"produto\": {\n                        \"id\": 2,\n                        \"nome\": \"Feijão\",\n                        \"peso\": 1,\n                        \"descricao\": \"Descrição do Feijão\"\n                    },\n                    \"quantidade\": 2,\n                    \"jaFoiDoado\": true\n                }\n            ],\n            \"status\": \"Aguardando\"\n        },\n        {\n            \"id\": 61,\n            \"receptor\": 10,\n            \"data\": \"2023-06-07T01:23:19.175274\",\n            \"solicitacaoProduto\": [\n                {\n                    \"id\": 81,\n                    \"produto\": {\n                        \"id\": 1,\n                        \"nome\": \"Pacote de Arroz\",\n                        \"peso\": 10,\n                        \"descricao\": \"Descrição do Arroz\"\n                    },\n                    \"quantidade\": 3,\n                    \"jaFoiDoado\": true\n                },\n                {\n                    \"id\": 82,\n                    \"produto\": {\n                        \"id\": 2,\n                        \"nome\": \"Feijão\",\n                        \"peso\": 1,\n                        \"descricao\": \"Descrição do Feijão\"\n                    },\n                    \"quantidade\": 2,\n                    \"jaFoiDoado\": true\n                }\n            ],\n            \"status\": \"Aguardando\"\n        },\n        {\n            \"id\": 62,\n            \"receptor\": 10,\n            \"data\": \"2023-06-07T01:41:03.339521\",\n            \"solicitacaoProduto\": [\n                {\n                    \"id\": 83,\n                    \"produto\": {\n                        \"id\": 1,\n                        \"nome\": \"Pacote de Arroz\",\n                        \"peso\": 10,\n                        \"descricao\": \"Descrição do Arroz\"\n                    },\n                    \"quantidade\": 3,\n                    \"jaFoiDoado\": true\n                },\n                {\n                    \"id\": 84,\n                    \"produto\": {\n                        \"id\": 2,\n                        \"nome\": \"Feijão\",\n                        \"peso\": 1,\n                        \"descricao\": \"Descrição do Feijão\"\n                    },\n                    \"quantidade\": 2,\n                    \"jaFoiDoado\": true\n                }\n            ],\n            \"status\": \"Aguardando\"\n        }\n    ],\n    \"pageable\": {\n        \"sort\": {\n            \"empty\": true,\n            \"sorted\": false,\n            \"unsorted\": true\n        },\n        \"offset\": 0,\n        \"pageSize\": 5,\n        \"pageNumber\": 0,\n        \"unpaged\": false,\n        \"paged\": true\n    },\n    \"last\": false,\n    \"totalElements\": 40,\n    \"totalPages\": 8,\n    \"size\": 5,\n    \"sort\": {\n        \"empty\": true,\n        \"sorted\": false,\n        \"unsorted\": true\n    },\n    \"first\": true,\n    \"numberOfElements\": 5,\n    \"number\": 0,\n    \"empty\": false\n}"
+						}
+					]
+				},
+				{
+					"name": "cadastrar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyZWlzMkBsb2NvLmNvbS5iciIsImlzcyI6IkZvb2RTaGFyZTEwIiwiZXhwIjoxNjg2MTE0Mjc1fQ.L8M5nhcYCfJ-UadbEuWuv6mX8NSJSwPd5QrVdlLx-Xw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cliente\": 10,\r\n  \"solicitacoesProduto\": [\r\n    {\r\n      \"produto\": {\r\n        \"id\": 1\r\n      },\r\n      \"quantidade\": 3\r\n    },\r\n    {\r\n      \"produto\": {\r\n        \"id\": 2\r\n      },\r\n      \"quantidade\": 2\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/solicitacoes",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"solicitacoes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "cadastrar",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"cliente\": 10,\r\n  \"solicitacoesProduto\": [\r\n    {\r\n      \"produto\": {\r\n        \"id\": 1\r\n      },\r\n      \"quantidade\": 3\r\n    },\r\n    {\r\n      \"produto\": {\r\n        \"id\": 2\r\n      },\r\n      \"quantidade\": 2\r\n    }\r\n  ]\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/solicitacoes",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"solicitacoes"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 04:50:08 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 65,\n    \"receptor\": 10,\n    \"data\": \"2023-06-07T01:50:08.7910594\",\n    \"solicitacaoProduto\": [\n        {\n            \"id\": 89,\n            \"produto\": {\n                \"id\": 1,\n                \"nome\": \"Arroz\",\n                \"peso\": 1,\n                \"descricao\": \"Descrição do Arroz\"\n            },\n            \"quantidade\": 3\n        },\n        {\n            \"id\": 90,\n            \"produto\": {\n                \"id\": 2,\n                \"nome\": \"Feijão\",\n                \"peso\": 1,\n                \"descricao\": \"Descrição do Feijão\"\n            },\n            \"quantidade\": 2\n        }\n    ],\n    \"status\": \"Aguardando\"\n}"
+						},
+						{
+							"name": "cadastrar",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"cliente\": 10,\r\n  \"solicitacoesProduto\": [\r\n    {\r\n      \"produto\": {\r\n        \"id\": 1\r\n      },\r\n      \"quantidade\": 3\r\n    },\r\n    {\r\n      \"produto\": {\r\n        \"id\": 2\r\n      },\r\n      \"quantidade\": 2\r\n    }\r\n  ]\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/solicitacoes",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"solicitacoes"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:14:29 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "atualizar/{ID}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyZWlzQGxvY28uY29tLmJyIiwiaXNzIjoiRm9vZFNoYXJlMTAiLCJleHAiOjE2ODYxNTA3Njh9.L0BHNWOeY3kUPUbD4jbajfWc3-yaCDQeCQqONGsTP5g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cliente\": 1,\r\n  \"solicitacoesProduto\": [\r\n    {\r\n      \"produto\": {\r\n        \"id\": 1\r\n      },\r\n      \"quantidade\": 2\r\n    },\r\n     {\r\n      \"produto\": {\r\n        \"id\": 2\r\n      },\r\n      \"quantidade\": 2\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/solicitacoes/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"solicitacoes",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "atualizar/{ID}",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"cliente\": 1,\r\n  \"solicitacoesProduto\": [\r\n    {\r\n      \"produto\": {\r\n        \"id\": 1\r\n      },\r\n      \"quantidade\": 2\r\n    },\r\n     {\r\n      \"produto\": {\r\n        \"id\": 2\r\n      },\r\n      \"quantidade\": 2\r\n    }\r\n  ]\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/solicitacoes/65",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"solicitacoes",
+										"65"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:15:44 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 65,\n    \"receptor\": 1,\n    \"data\": \"2023-06-07T01:50:08.791059\",\n    \"solicitacaoProduto\": [\n        {\n            \"id\": 89,\n            \"produto\": {\n                \"id\": 1,\n                \"nome\": \"Pacote de Arroz\",\n                \"peso\": 10,\n                \"descricao\": \"Descrição do Arroz\"\n            },\n            \"quantidade\": 2\n        },\n        {\n            \"id\": 90,\n            \"produto\": {\n                \"id\": 2,\n                \"nome\": \"Feijão\",\n                \"peso\": 1,\n                \"descricao\": \"Descrição do Feijão\"\n            },\n            \"quantidade\": 2\n        },\n        {\n            \"id\": 89,\n            \"produto\": {\n                \"id\": 1,\n                \"nome\": \"Pacote de Arroz\",\n                \"peso\": 10,\n                \"descricao\": \"Descrição do Arroz\"\n            },\n            \"quantidade\": 2\n        },\n        {\n            \"id\": 90,\n            \"produto\": {\n                \"id\": 2,\n                \"nome\": \"Feijão\",\n                \"peso\": 1,\n                \"descricao\": \"Descrição do Feijão\"\n            },\n            \"quantidade\": 2\n        }\n    ],\n    \"status\": \"Aguardando\"\n}"
+						},
+						{
+							"name": "atualizar/{ID}",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"cliente\": 1,\r\n  \"solicitacoesProduto\": [\r\n    {\r\n      \"produto\": {\r\n        \"id\": 1\r\n      },\r\n      \"quantidade\": 2\r\n    },\r\n     {\r\n      \"produto\": {\r\n        \"id\": 2\r\n      },\r\n      \"quantidade\": 2\r\n    }\r\n  ]\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/solicitacoes/332131",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"solicitacoes",
+										"332131"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:16:03 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "buscar/{ID}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyZWlzQGxvY28uY29tLmJyIiwiaXNzIjoiRm9vZFNoYXJlMTAiLCJleHAiOjE2ODYxNTA3Njh9.L0BHNWOeY3kUPUbD4jbajfWc3-yaCDQeCQqONGsTP5g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/solicitacoes/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"solicitacoes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "busca/cliente={id}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyZWlzMkBsb2NvLmNvbS5iciIsImlzcyI6IkZvb2RTaGFyZTEwIiwiZXhwIjoxNjg2MTE0Mjc1fQ.L8M5nhcYCfJ-UadbEuWuv6mX8NSJSwPd5QrVdlLx-Xw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/solicitacoes/cliente=10?page=0&size=4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"solicitacoes",
+								"cliente=10"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "busca/cliente={id}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/solicitacoes/cliente=10?page=0&size=4",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"solicitacoes",
+										"cliente=10"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "0"
+										},
+										{
+											"key": "size",
+											"value": "4"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:16:19 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"content\": [\n        {\n            \"id\": 41,\n            \"receptor\": 10,\n            \"data\": \"2023-06-06T22:16:36.149569\",\n            \"solicitacaoProduto\": [\n                {\n                    \"id\": 61,\n                    \"produto\": {\n                        \"id\": 1,\n                        \"nome\": \"Pacote de Arroz\",\n                        \"peso\": 10,\n                        \"descricao\": \"Descrição do Arroz\"\n                    },\n                    \"quantidade\": 3,\n                    \"jaFoiDoado\": true\n                },\n                {\n                    \"id\": 62,\n                    \"produto\": {\n                        \"id\": 2,\n                        \"nome\": \"Feijão\",\n                        \"peso\": 1,\n                        \"descricao\": \"Descrição do Feijão\"\n                    },\n                    \"quantidade\": 2,\n                    \"jaFoiDoado\": true\n                }\n            ],\n            \"status\": \"Aguardando\"\n        },\n        {\n            \"id\": 61,\n            \"receptor\": 10,\n            \"data\": \"2023-06-07T01:23:19.175274\",\n            \"solicitacaoProduto\": [\n                {\n                    \"id\": 81,\n                    \"produto\": {\n                        \"id\": 1,\n                        \"nome\": \"Pacote de Arroz\",\n                        \"peso\": 10,\n                        \"descricao\": \"Descrição do Arroz\"\n                    },\n                    \"quantidade\": 3,\n                    \"jaFoiDoado\": true\n                },\n                {\n                    \"id\": 82,\n                    \"produto\": {\n                        \"id\": 2,\n                        \"nome\": \"Feijão\",\n                        \"peso\": 1,\n                        \"descricao\": \"Descrição do Feijão\"\n                    },\n                    \"quantidade\": 2,\n                    \"jaFoiDoado\": true\n                }\n            ],\n            \"status\": \"Aguardando\"\n        },\n        {\n            \"id\": 62,\n            \"receptor\": 10,\n            \"data\": \"2023-06-07T01:41:03.339521\",\n            \"solicitacaoProduto\": [\n                {\n                    \"id\": 83,\n                    \"produto\": {\n                        \"id\": 1,\n                        \"nome\": \"Pacote de Arroz\",\n                        \"peso\": 10,\n                        \"descricao\": \"Descrição do Arroz\"\n                    },\n                    \"quantidade\": 3,\n                    \"jaFoiDoado\": true\n                },\n                {\n                    \"id\": 84,\n                    \"produto\": {\n                        \"id\": 2,\n                        \"nome\": \"Feijão\",\n                        \"peso\": 1,\n                        \"descricao\": \"Descrição do Feijão\"\n                    },\n                    \"quantidade\": 2,\n                    \"jaFoiDoado\": true\n                }\n            ],\n            \"status\": \"Aguardando\"\n        },\n        {\n            \"id\": 10,\n            \"receptor\": 10,\n            \"data\": \"2023-06-06T19:43:36.438089\",\n            \"solicitacaoProduto\": [\n                {\n                    \"id\": 19,\n                    \"produto\": {\n                        \"id\": 1,\n                        \"nome\": \"Pacote de Arroz\",\n                        \"peso\": 10,\n                        \"descricao\": \"Descrição do Arroz\"\n                    },\n                    \"quantidade\": 3,\n                    \"jaFoiDoado\": true\n                },\n                {\n                    \"id\": 20,\n                    \"produto\": {\n                        \"id\": 2,\n                        \"nome\": \"Feijão\",\n                        \"peso\": 1,\n                        \"descricao\": \"Descrição do Feijão\"\n                    },\n                    \"quantidade\": 2,\n                    \"jaFoiDoado\": true\n                }\n            ],\n            \"status\": \"Aguardando\"\n        }\n    ],\n    \"pageable\": {\n        \"sort\": {\n            \"empty\": true,\n            \"sorted\": false,\n            \"unsorted\": true\n        },\n        \"offset\": 0,\n        \"pageSize\": 4,\n        \"pageNumber\": 0,\n        \"unpaged\": false,\n        \"paged\": true\n    },\n    \"last\": false,\n    \"totalElements\": 28,\n    \"totalPages\": 7,\n    \"size\": 4,\n    \"sort\": {\n        \"empty\": true,\n        \"sorted\": false,\n        \"unsorted\": true\n    },\n    \"first\": true,\n    \"numberOfElements\": 4,\n    \"number\": 0,\n    \"empty\": false\n}"
+						},
+						{
+							"name": "busca/cliente={id}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/solicitacoes/cliente=10?page=0&size=4",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"solicitacoes",
+										"cliente=10"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "0"
+										},
+										{
+											"key": "size",
+											"value": "4"
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:16:28 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "atualizar/{ID}/status",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"status\": \"Cancelado\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/solicitacoes/2/status",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"solicitacoes",
+								"2",
+								"status"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "atualizar/{ID}/status",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"status\": \"Cancelado\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/solicitacoes/2/status",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"solicitacoes",
+										"2",
+										"status"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:16:40 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"receptor\": 1,\n    \"data\": \"2023-06-06T16:40:03.262401\",\n    \"solicitacaoProduto\": [\n        {\n            \"id\": 3,\n            \"produto\": {\n                \"id\": 1,\n                \"nome\": \"Pacote de Arroz\",\n                \"peso\": 10,\n                \"descricao\": \"Descrição do Arroz\"\n            },\n            \"quantidade\": 2\n        },\n        {\n            \"id\": 4,\n            \"produto\": {\n                \"id\": 2,\n                \"nome\": \"Feijão\",\n                \"peso\": 1,\n                \"descricao\": \"Descrição do Feijão\"\n            },\n            \"quantidade\": 2\n        }\n    ],\n    \"status\": \"Cancelado\"\n}"
+						},
+						{
+							"name": "atualizar/{ID}/status",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"status\": \"Cancelado\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/solicitacoes/2/status",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"solicitacoes",
+										"2",
+										"status"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:16:45 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Doacao",
+			"item": [
+				{
+					"name": "buscarTodos",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyZWlzMkBsb2NvLmNvbS5iciIsImlzcyI6IkZvb2RTaGFyZTEwIiwiZXhwIjoxNjg2MTEwMjkxfQ.d0vAA5AMXUKwZEvUQKkbLqSW7cwRqxs8Cb4zeK8oxoY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/doacoes?page=8&size=5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"doacoes"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "8"
+								},
+								{
+									"key": "size",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "buscarTodos",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/doacoes?page=8&size=5",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"doacoes"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "8"
+										},
+										{
+											"key": "size",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:16:56 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "buscarTodos",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/doacoes?page=8&size=5",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"doacoes"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "8"
+										},
+										{
+											"key": "size",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:17:01 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"content\": [\n        {\n            \"id\": 57,\n            \"cliente\": 6,\n            \"solicitacaoProduto\": {\n                \"id\": 90,\n                \"produto\": {\n                    \"id\": 2,\n                    \"nome\": \"Feijão\",\n                    \"peso\": 1,\n                    \"descricao\": \"Descrição do Feijão\"\n                },\n                \"quantidade\": 2\n            },\n            \"status\": \"Aguardando\",\n            \"solicitacao\": 65,\n            \"nomeSolicitante\": \"Nome do Doador\",\n            \"endereco\": {\n                \"id\": 1,\n                \"cep\": \"01234-567\",\n                \"bairro\": \"Centro\",\n                \"logradouro\": \"Rua Principal\",\n                \"numero\": \"123\",\n                \"complemento\": \"Apt 456\",\n                \"cidade\": \"São Paulo\",\n                \"estado\": \"São Paulo\",\n                \"uf\": \"SP\",\n                \"longitude\": -46.64505243301392,\n                \"latitude\": -23.56513772520115\n            }\n        },\n        {\n            \"id\": 58,\n            \"cliente\": 6,\n            \"solicitacaoProduto\": {\n                \"id\": 47,\n                \"produto\": {\n                    \"id\": 1,\n                    \"nome\": \"Pacote de Arroz\",\n                    \"peso\": 10,\n                    \"descricao\": \"Descrição do Arroz\"\n                },\n                \"quantidade\": 3\n            },\n            \"status\": \"Aguardando\",\n            \"solicitacao\": 24,\n            \"nomeSolicitante\": \"Luan Reis\",\n            \"endereco\": {\n                \"id\": 8,\n                \"cep\": \"01234-567\",\n                \"bairro\": \"Centro\",\n                \"logradouro\": \"Rua Principal\",\n                \"numero\": \"123\",\n                \"complemento\": \"Apt 456\",\n                \"cidade\": \"São Paulo\",\n                \"estado\": \"São Paulo\",\n                \"uf\": \"SP\",\n                \"longitude\": -46.64358258247376,\n                \"latitude\": -23.56921882043507\n            }\n        },\n        {\n            \"id\": 59,\n            \"cliente\": 6,\n            \"solicitacaoProduto\": {\n                \"id\": 48,\n                \"produto\": {\n                    \"id\": 2,\n                    \"nome\": \"Feijão\",\n                    \"peso\": 1,\n                    \"descricao\": \"Descrição do Feijão\"\n                },\n                \"quantidade\": 2\n            },\n            \"status\": \"Aguardando\",\n            \"solicitacao\": 24,\n            \"nomeSolicitante\": \"Luan Reis\",\n            \"endereco\": {\n                \"id\": 8,\n                \"cep\": \"01234-567\",\n                \"bairro\": \"Centro\",\n                \"logradouro\": \"Rua Principal\",\n                \"numero\": \"123\",\n                \"complemento\": \"Apt 456\",\n                \"cidade\": \"São Paulo\",\n                \"estado\": \"São Paulo\",\n                \"uf\": \"SP\",\n                \"longitude\": -46.64358258247376,\n                \"latitude\": -23.56921882043507\n            }\n        },\n        {\n            \"id\": 3,\n            \"cliente\": 6,\n            \"solicitacaoProduto\": {\n                \"id\": 10,\n                \"produto\": {\n                    \"id\": 2,\n                    \"nome\": \"Feijão\",\n                    \"peso\": 1,\n                    \"descricao\": \"Descrição do Feijão\"\n                },\n                \"quantidade\": 2\n            },\n            \"status\": \"Aguardando\",\n            \"solicitacao\": 5,\n            \"nomeSolicitante\": \"Luan Reis\",\n            \"endereco\": {\n                \"id\": 8,\n                \"cep\": \"01234-567\",\n                \"bairro\": \"Centro\",\n                \"logradouro\": \"Rua Principal\",\n                \"numero\": \"123\",\n                \"complemento\": \"Apt 456\",\n                \"cidade\": \"São Paulo\",\n                \"estado\": \"São Paulo\",\n                \"uf\": \"SP\",\n                \"longitude\": -46.64358258247376,\n                \"latitude\": -23.56921882043507\n            }\n        },\n        {\n            \"id\": 9,\n            \"cliente\": 6,\n            \"solicitacaoProduto\": {\n                \"id\": 15,\n                \"produto\": {\n                    \"id\": 1,\n                    \"nome\": \"Pacote de Arroz\",\n                    \"peso\": 10,\n                    \"descricao\": \"Descrição do Arroz\"\n                },\n                \"quantidade\": 3\n            },\n            \"status\": \"Aguardando\",\n            \"solicitacao\": 8,\n            \"nomeSolicitante\": \"Luan Reis\",\n            \"endereco\": {\n                \"id\": 8,\n                \"cep\": \"01234-567\",\n                \"bairro\": \"Centro\",\n                \"logradouro\": \"Rua Principal\",\n                \"numero\": \"123\",\n                \"complemento\": \"Apt 456\",\n                \"cidade\": \"São Paulo\",\n                \"estado\": \"São Paulo\",\n                \"uf\": \"SP\",\n                \"longitude\": -46.64358258247376,\n                \"latitude\": -23.56921882043507\n            }\n        }\n    ],\n    \"pageable\": {\n        \"sort\": {\n            \"empty\": true,\n            \"sorted\": false,\n            \"unsorted\": true\n        },\n        \"offset\": 40,\n        \"pageSize\": 5,\n        \"pageNumber\": 8,\n        \"unpaged\": false,\n        \"paged\": true\n    },\n    \"last\": false,\n    \"totalElements\": 58,\n    \"totalPages\": 12,\n    \"size\": 5,\n    \"sort\": {\n        \"empty\": true,\n        \"sorted\": false,\n        \"unsorted\": true\n    },\n    \"first\": false,\n    \"numberOfElements\": 5,\n    \"number\": 8,\n    \"empty\": false\n}"
+						}
+					]
+				},
+				{
+					"name": "buscar/{id}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyZWlzMkBsb2NvLmNvbS5iciIsImlzcyI6IkZvb2RTaGFyZTEwIiwiZXhwIjoxNjg2MTAwMzc4fQ.mq0vlmhLjXMfiiF73SZnF1OdmqkfHTsjfYZMiBgqC5A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/doacoes/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"doacoes",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "buscar/{id}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/doacoes/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"doacoes",
+										"1"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:17:09 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "buscar/{id}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/doacoes/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"doacoes",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:17:13 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"cliente\": 2,\n    \"solicitacaoProduto\": {\n        \"id\": 1,\n        \"produto\": {\n            \"id\": 1,\n            \"nome\": \"Pacote de Arroz\",\n            \"peso\": 10,\n            \"descricao\": \"Descrição do Arroz\"\n        },\n        \"quantidade\": 2\n    },\n    \"status\": \"Aguardando\",\n    \"solicitacao\": 1,\n    \"nomeSolicitante\": \"Nome do Doador\",\n    \"endereco\": {\n        \"id\": 1,\n        \"cep\": \"01234-567\",\n        \"bairro\": \"Centro\",\n        \"logradouro\": \"Rua Principal\",\n        \"numero\": \"123\",\n        \"complemento\": \"Apt 456\",\n        \"cidade\": \"São Paulo\",\n        \"estado\": \"São Paulo\",\n        \"uf\": \"SP\",\n        \"longitude\": -46.64505243301392,\n        \"latitude\": -23.56513772520115\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "buscar/cliente={id}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyZWlzMkBsb2NvLmNvbS5iciIsImlzcyI6IkZvb2RTaGFyZTEwIiwiZXhwIjoxNjg2MTE0Mjc1fQ.L8M5nhcYCfJ-UadbEuWuv6mX8NSJSwPd5QrVdlLx-Xw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/doacoes/cliente=6?page=0&size=4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"doacoes",
+								"cliente=6"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "buscar/cliente={id}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/doacoes/cliente=6?page=0&size=4",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"doacoes",
+										"cliente=6"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "0"
+										},
+										{
+											"key": "size",
+											"value": "4"
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:17:19 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "buscar/cliente={id}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/doacoes/cliente=6?page=0&size=4",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"doacoes",
+										"cliente=6"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "0"
+										},
+										{
+											"key": "size",
+											"value": "4"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:17:23 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"content\": [\n        {\n            \"id\": 41,\n            \"cliente\": 6,\n            \"solicitacaoProduto\": {\n                \"id\": 61,\n                \"produto\": {\n                    \"id\": 1,\n                    \"nome\": \"Pacote de Arroz\",\n                    \"peso\": 10,\n                    \"descricao\": \"Descrição do Arroz\"\n                },\n                \"quantidade\": 3,\n                \"jaFoiDoado\": true\n            },\n            \"status\": \"Aguardando\",\n            \"solicitacao\": 41,\n            \"nomeSolicitante\": \"Luan Reis\",\n            \"endereco\": {\n                \"id\": 8,\n                \"cep\": \"01234-567\",\n                \"bairro\": \"Centro\",\n                \"logradouro\": \"Rua Principal\",\n                \"numero\": \"123\",\n                \"complemento\": \"Apt 456\",\n                \"cidade\": \"São Paulo\",\n                \"estado\": \"São Paulo\",\n                \"uf\": \"SP\",\n                \"longitude\": -46.64358258247376,\n                \"latitude\": -23.56921882043507\n            }\n        },\n        {\n            \"id\": 47,\n            \"cliente\": 6,\n            \"solicitacaoProduto\": {\n                \"id\": 41,\n                \"produto\": {\n                    \"id\": 1,\n                    \"nome\": \"Pacote de Arroz\",\n                    \"peso\": 10,\n                    \"descricao\": \"Descrição do Arroz\"\n                },\n                \"quantidade\": 3,\n                \"jaFoiDoado\": true\n            },\n            \"status\": \"Aguardando\",\n            \"solicitacao\": 21,\n            \"nomeSolicitante\": \"Luan Reis\",\n            \"endereco\": {\n                \"id\": 8,\n                \"cep\": \"01234-567\",\n                \"bairro\": \"Centro\",\n                \"logradouro\": \"Rua Principal\",\n                \"numero\": \"123\",\n                \"complemento\": \"Apt 456\",\n                \"cidade\": \"São Paulo\",\n                \"estado\": \"São Paulo\",\n                \"uf\": \"SP\",\n                \"longitude\": -46.64358258247376,\n                \"latitude\": -23.56921882043507\n            }\n        },\n        {\n            \"id\": 52,\n            \"cliente\": 6,\n            \"solicitacaoProduto\": {\n                \"id\": 84,\n                \"produto\": {\n                    \"id\": 2,\n                    \"nome\": \"Feijão\",\n                    \"peso\": 1,\n                    \"descricao\": \"Descrição do Feijão\"\n                },\n                \"quantidade\": 2,\n                \"jaFoiDoado\": true\n            },\n            \"status\": \"Aguardando\",\n            \"solicitacao\": 62,\n            \"nomeSolicitante\": \"Luan Reis\",\n            \"endereco\": {\n                \"id\": 8,\n                \"cep\": \"01234-567\",\n                \"bairro\": \"Centro\",\n                \"logradouro\": \"Rua Principal\",\n                \"numero\": \"123\",\n                \"complemento\": \"Apt 456\",\n                \"cidade\": \"São Paulo\",\n                \"estado\": \"São Paulo\",\n                \"uf\": \"SP\",\n                \"longitude\": -46.64358258247376,\n                \"latitude\": -23.56921882043507\n            }\n        },\n        {\n            \"id\": 2,\n            \"cliente\": 6,\n            \"solicitacaoProduto\": {\n                \"id\": 8,\n                \"produto\": {\n                    \"id\": 2,\n                    \"nome\": \"Feijão\",\n                    \"peso\": 1,\n                    \"descricao\": \"Descrição do Feijão\"\n                },\n                \"quantidade\": 2,\n                \"jaFoiDoado\": true\n            },\n            \"status\": \"Aguardando\",\n            \"solicitacao\": 4,\n            \"nomeSolicitante\": \"Luan Reis\",\n            \"endereco\": {\n                \"id\": 8,\n                \"cep\": \"01234-567\",\n                \"bairro\": \"Centro\",\n                \"logradouro\": \"Rua Principal\",\n                \"numero\": \"123\",\n                \"complemento\": \"Apt 456\",\n                \"cidade\": \"São Paulo\",\n                \"estado\": \"São Paulo\",\n                \"uf\": \"SP\",\n                \"longitude\": -46.64358258247376,\n                \"latitude\": -23.56921882043507\n            }\n        }\n    ],\n    \"pageable\": {\n        \"sort\": {\n            \"empty\": true,\n            \"sorted\": false,\n            \"unsorted\": true\n        },\n        \"offset\": 0,\n        \"pageSize\": 4,\n        \"pageNumber\": 0,\n        \"unpaged\": false,\n        \"paged\": true\n    },\n    \"last\": false,\n    \"totalElements\": 55,\n    \"totalPages\": 14,\n    \"size\": 4,\n    \"sort\": {\n        \"empty\": true,\n        \"sorted\": false,\n        \"unsorted\": true\n    },\n    \"first\": true,\n    \"numberOfElements\": 4,\n    \"number\": 0,\n    \"empty\": false\n}"
+						}
+					]
+				},
+				{
+					"name": "cadastrar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyZWlzQGxvY28uY29tLmJyIiwiaXNzIjoiRm9vZFNoYXJlMTAiLCJleHAiOjE2ODYxNTA3Njh9.L0BHNWOeY3kUPUbD4jbajfWc3-yaCDQeCQqONGsTP5g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cliente\": 2,\r\n  \"solicitacaoProduto\": {\r\n    \"id\": 45\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/doacoes",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"doacoes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "cadastrar",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"cliente\": 2,\r\n  \"solicitacaoProduto\": {\r\n    \"id\": 22\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/doacoes",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"doacoes"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:17:31 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "cadastrar",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"cliente\": 2,\r\n  \"solicitacaoProduto\": {\r\n    \"id\": 45\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/doacoes",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"doacoes"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:17:50 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 60,\n    \"cliente\": 2,\n    \"solicitacaoProduto\": {\n        \"id\": 45,\n        \"produto\": {\n            \"id\": 1,\n            \"nome\": \"Pacote de Arroz\",\n            \"peso\": 10,\n            \"descricao\": \"Descrição do Arroz\"\n        },\n        \"quantidade\": 3\n    },\n    \"status\": \"Aguardando\",\n    \"solicitacao\": 23,\n    \"nomeSolicitante\": \"Luan Reis\",\n    \"endereco\": {\n        \"id\": 8,\n        \"cep\": \"01234-567\",\n        \"bairro\": \"Centro\",\n        \"logradouro\": \"Rua Principal\",\n        \"numero\": \"123\",\n        \"complemento\": \"Apt 456\",\n        \"cidade\": \"São Paulo\",\n        \"estado\": \"São Paulo\",\n        \"uf\": \"SP\",\n        \"longitude\": -46.64358258247376,\n        \"latitude\": -23.56921882043507\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "atualizar/{id}",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cliente\": 1,\r\n  \"solicitacaoProduto\": {\r\n    \"id\": 1\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/doacoes/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"doacoes",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "atualizar/{id}",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"cliente\": 1,\r\n  \"solicitacaoProduto\": {\r\n    \"id\": 1\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/doacoes/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"doacoes",
+										"1"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:17:57 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "atualizar/{id}",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"cliente\": 6,\r\n  \"solicitacaoProduto\": {\r\n    \"id\": 1\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/doacoes/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"doacoes",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:18:12 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"cliente\": 6,\n    \"solicitacaoProduto\": {\n        \"id\": 1,\n        \"produto\": {\n            \"id\": 1,\n            \"nome\": \"Pacote de Arroz\",\n            \"peso\": 10,\n            \"descricao\": \"Descrição do Arroz\"\n        },\n        \"quantidade\": 2\n    },\n    \"status\": \"Aguardando\",\n    \"solicitacao\": 1,\n    \"nomeSolicitante\": \"Nome do Doador\",\n    \"endereco\": {\n        \"id\": 1,\n        \"cep\": \"01234-567\",\n        \"bairro\": \"Centro\",\n        \"logradouro\": \"Rua Principal\",\n        \"numero\": \"123\",\n        \"complemento\": \"Apt 456\",\n        \"cidade\": \"São Paulo\",\n        \"estado\": \"São Paulo\",\n        \"uf\": \"SP\",\n        \"longitude\": -46.64505243301392,\n        \"latitude\": -23.56513772520115\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "atualizar{id}/status",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"status\": \"Concluido\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/doacoes/1/status",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"doacoes",
+								"1",
+								"status"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "atualizar{id}/status",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"status\": \"Concluido\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/doacoes/1/status",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"doacoes",
+										"1",
+										"status"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:18:21 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "atualizar{id}/status",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"status\": \"Concluido\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/doacoes/1/status",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"doacoes",
+										"1",
+										"status"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:18:27 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"cliente\": 6,\n    \"solicitacaoProduto\": {\n        \"id\": 1,\n        \"produto\": {\n            \"id\": 1,\n            \"nome\": \"Pacote de Arroz\",\n            \"peso\": 10,\n            \"descricao\": \"Descrição do Arroz\"\n        },\n        \"quantidade\": 2\n    },\n    \"status\": \"Concluido\",\n    \"solicitacao\": 1,\n    \"nomeSolicitante\": \"Nome do Doador\",\n    \"endereco\": {\n        \"id\": 1,\n        \"cep\": \"01234-567\",\n        \"bairro\": \"Centro\",\n        \"logradouro\": \"Rua Principal\",\n        \"numero\": \"123\",\n        \"complemento\": \"Apt 456\",\n        \"cidade\": \"São Paulo\",\n        \"estado\": \"São Paulo\",\n        \"uf\": \"SP\",\n        \"longitude\": -46.64505243301392,\n        \"latitude\": -23.56513772520115\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Feedback",
+			"item": [
+				{
+					"name": "buscarTodos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/feedbacks",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"feedbacks"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "buscarTodos",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/feedbacks",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"feedbacks"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:18:38 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"content\": [],\n    \"pageable\": {\n        \"sort\": {\n            \"empty\": true,\n            \"sorted\": false,\n            \"unsorted\": true\n        },\n        \"offset\": 0,\n        \"pageSize\": 20,\n        \"pageNumber\": 0,\n        \"unpaged\": false,\n        \"paged\": true\n    },\n    \"last\": true,\n    \"totalElements\": 0,\n    \"totalPages\": 0,\n    \"size\": 20,\n    \"sort\": {\n        \"empty\": true,\n        \"sorted\": false,\n        \"unsorted\": true\n    },\n    \"first\": true,\n    \"numberOfElements\": 0,\n    \"number\": 0,\n    \"empty\": true\n}"
+						},
+						{
+							"name": "buscarTodos",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/feedbacks",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"feedbacks"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:18:45 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "buscar/{id}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyZWlzQGxvY28uY29tLmJyIiwiaXNzIjoiRm9vZFNoYXJlMTAiLCJleHAiOjE2ODYxNTA3Njh9.L0BHNWOeY3kUPUbD4jbajfWc3-yaCDQeCQqONGsTP5g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/feedbacks/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"feedbacks",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "buscar/{id}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/doacoes/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"doacoes",
+										"1"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:19:00 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "buscar/{id}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/doacoes/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"doacoes",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:19:06 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"cliente\": 6,\n    \"solicitacaoProduto\": {\n        \"id\": 1,\n        \"produto\": {\n            \"id\": 1,\n            \"nome\": \"Pacote de Arroz\",\n            \"peso\": 10,\n            \"descricao\": \"Descrição do Arroz\"\n        },\n        \"quantidade\": 2\n    },\n    \"status\": \"Concluido\",\n    \"solicitacao\": 1,\n    \"nomeSolicitante\": \"Nome do Doador\",\n    \"endereco\": {\n        \"id\": 1,\n        \"cep\": \"01234-567\",\n        \"bairro\": \"Centro\",\n        \"logradouro\": \"Rua Principal\",\n        \"numero\": \"123\",\n        \"complemento\": \"Apt 456\",\n        \"cidade\": \"São Paulo\",\n        \"estado\": \"São Paulo\",\n        \"uf\": \"SP\",\n        \"longitude\": -46.64505243301392,\n        \"latitude\": -23.56513772520115\n    }\n}"
+						},
+						{
+							"name": "buscar/{id}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/feedbacks/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"feedbacks",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:19:45 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"nota\": 4,\n    \"doacao\": 1,\n    \"solicitacao\": 2,\n    \"descricao\": \"Ótima interação com o doador\"\n}"
+						}
+					]
+				},
+				{
+					"name": "cadastrar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyZWlzQGxvY28uY29tLmJyIiwiaXNzIjoiRm9vZFNoYXJlMTAiLCJleHAiOjE2ODYxNTA3Njh9.L0BHNWOeY3kUPUbD4jbajfWc3-yaCDQeCQqONGsTP5g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nota\": 4,\r\n  \"idDoacao\": 2,\r\n  \"idSolicitacao\": 3,\r\n  \"descricao\": \"Ótima interação com o doador\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/feedbacks",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"feedbacks"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "cadastrar",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"nota\": 4,\r\n  \"idDoacao\": 1,\r\n  \"idSolicitacao\": 2,\r\n  \"descricao\": \"Ótima interação com o doador\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/feedbacks",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"feedbacks"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:20:05 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "cadastrar",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"nota\": 4,\r\n  \"idDoacao\": 2,\r\n  \"idSolicitacao\": 3,\r\n  \"descricao\": \"Ótima interação com o doador\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/feedbacks",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"feedbacks"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:20:22 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"nota\": 4,\n    \"doacao\": 2,\n    \"solicitacao\": 3,\n    \"descricao\": \"Ótima interação com o doador\"\n}"
+						}
+					]
+				},
+				{
+					"name": "atualizar/{id}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyZWlzQGxvY28uY29tLmJyIiwiaXNzIjoiRm9vZFNoYXJlMTAiLCJleHAiOjE2ODYxNTA3Njh9.L0BHNWOeY3kUPUbD4jbajfWc3-yaCDQeCQqONGsTP5g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nota\": 4,\r\n  \"idDoacao\": 1,\r\n  \"idSolicitacao\": 2,\r\n  \"descricao\": \"Ótima interação com o doador\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/feedbacks/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"feedbacks",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "atualizar/{id}",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"nota\": 4,\r\n  \"idDoacao\": 1,\r\n  \"idSolicitacao\": 2,\r\n  \"descricao\": \"Ótima interação com o doador\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/feedbacks/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"feedbacks",
+										"1"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:20:32 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "atualizar/{id}",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"nota\": 4,\r\n  \"idDoacao\": 1,\r\n  \"idSolicitacao\": 2,\r\n  \"descricao\": \"Ótima interação com o doador\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/feedbacks/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"feedbacks",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:20:37 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"nota\": 4,\n    \"doacao\": 1,\n    \"solicitacao\": 2,\n    \"descricao\": \"Ótima interação com o doador\"\n}"
+						}
+					]
+				},
+				{
+					"name": "delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyZWlzQGxvY28uY29tLmJyIiwiaXNzIjoiRm9vZFNoYXJlMTAiLCJleHAiOjE2ODYxNTA3Njh9.L0BHNWOeY3kUPUbD4jbajfWc3-yaCDQeCQqONGsTP5g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/feedbacks/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"feedbacks",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/feedbacks/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"feedbacks",
+										"1"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:20:51 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Produto",
+			"item": [
+				{
+					"name": "buscarTodos",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyZWlzQGxvY28uY29tLmJyIiwiaXNzIjoiRm9vZFNoYXJlMTAiLCJleHAiOjE2ODYxNTA3Njh9.L0BHNWOeY3kUPUbD4jbajfWc3-yaCDQeCQqONGsTP5g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/produtos?page=0&size=5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"produtos"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "buscarTodos",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/produtos?page=0&size=5",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"produtos"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "0"
+										},
+										{
+											"key": "size",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:21:01 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "buscarTodos",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/produtos?page=0&size=5",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"produtos"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "0"
+										},
+										{
+											"key": "size",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:21:08 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"content\": [\n        {\n            \"id\": 1,\n            \"nome\": \"Pacote de Arroz\",\n            \"peso\": 10,\n            \"descricao\": \"Descrição do Arroz\"\n        },\n        {\n            \"id\": 2,\n            \"nome\": \"Feijão\",\n            \"peso\": 1,\n            \"descricao\": \"Descrição do Feijão\"\n        },\n        {\n            \"id\": 61,\n            \"nome\": \"Cesta de arroizes\",\n            \"peso\": 1,\n            \"descricao\": \"Descrição do Teeste\"\n        },\n        {\n            \"id\": 21,\n            \"nome\": \"Leite\",\n            \"peso\": 1000,\n            \"descricao\": \"Leite integral, caixa de 1 litro\"\n        },\n        {\n            \"id\": 22,\n            \"nome\": \"Óleo de Soja\",\n            \"peso\": 900,\n            \"descricao\": \"Óleo de soja, garrafa de 900ml\"\n        }\n    ],\n    \"pageable\": {\n        \"sort\": {\n            \"empty\": true,\n            \"sorted\": false,\n            \"unsorted\": true\n        },\n        \"offset\": 0,\n        \"pageSize\": 5,\n        \"pageNumber\": 0,\n        \"unpaged\": false,\n        \"paged\": true\n    },\n    \"last\": false,\n    \"totalElements\": 24,\n    \"totalPages\": 5,\n    \"size\": 5,\n    \"sort\": {\n        \"empty\": true,\n        \"sorted\": false,\n        \"unsorted\": true\n    },\n    \"first\": true,\n    \"numberOfElements\": 5,\n    \"number\": 0,\n    \"empty\": false\n}"
+						}
+					]
+				},
+				{
+					"name": "buscar/{id}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyZWlzQGxvY28uY29tLmJyIiwiaXNzIjoiRm9vZFNoYXJlMTAiLCJleHAiOjE2ODYxNTA3Njh9.L0BHNWOeY3kUPUbD4jbajfWc3-yaCDQeCQqONGsTP5g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/produtos/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"produtos",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "buscar/{id}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/produtos/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"produtos",
+										"1"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:21:17 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "buscar/{id}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/produtos/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"produtos",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:21:22 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"nome\": \"Pacote de Arroz\",\n    \"peso\": 10,\n    \"descricao\": \"Descrição do Arroz\"\n}"
+						}
+					]
+				},
+				{
+					"name": "cadastrar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyZWlzQGxvY28uY29tLmJyIiwiaXNzIjoiRm9vZFNoYXJlMTAiLCJleHAiOjE2ODYxNTA3Njh9.L0BHNWOeY3kUPUbD4jbajfWc3-yaCDQeCQqONGsTP5g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Cesta de arroizes\",\r\n    \"peso\": 1.0,\r\n    \"descricao\": \"Descrição do Teeste\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/produtos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"produtos"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "cadastrar",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nome\": \"Cesta de arroizes\",\r\n    \"peso\": 1.0,\r\n    \"descricao\": \"Descrição do Teeste\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/produtos",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"produtos"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:21:30 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "cadastrar",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nome\": \"Cesta de arroizes\",\r\n    \"peso\": 1.0,\r\n    \"descricao\": \"Descrição do Teeste\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/produtos",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"produtos"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:21:35 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 81,\n    \"nome\": \"Cesta de arroizes\",\n    \"peso\": 1,\n    \"descricao\": \"Descrição do Teeste\"\n}"
+						}
+					]
+				},
+				{
+					"name": "atualizar/{id}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyZWlzQGxvY28uY29tLmJyIiwiaXNzIjoiRm9vZFNoYXJlMTAiLCJleHAiOjE2ODYxMjAxMTR9.3O_Znpvb6y6UkrsRVmeR-e2QbPZozas2jBNfgp4StyQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"nome\": \"Pacote de Arroz\",\r\n    \"peso\": 10.0,\r\n    \"descricao\": \"Descrição do Arroz\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/produtos/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"produtos",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "atualizar/{id}",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"nome\": \"Pacote de Arroz\",\r\n    \"peso\": 10.0,\r\n    \"descricao\": \"Descrição do Arroz\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/produtos/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"produtos",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:21:43 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"nome\": \"Pacote de Arroz\",\n    \"peso\": 10,\n    \"descricao\": \"Descrição do Arroz\"\n}"
+						},
+						{
+							"name": "atualizar/{id}",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"nome\": \"Pacote de Arroz\",\r\n    \"peso\": 10.0,\r\n    \"descricao\": \"Descrição do Arroz\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/produtos/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"produtos",
+										"1"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:21:49 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyZWlzQGxvY28uY29tLmJyIiwiaXNzIjoiRm9vZFNoYXJlMTAiLCJleHAiOjE2ODYxNTA3Njh9.L0BHNWOeY3kUPUbD4jbajfWc3-yaCDQeCQqONGsTP5g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/produtos/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"produtos",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/produtos/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"produtos",
+										"1"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:22:00 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/produtos/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"produtos",
+										"1"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 07 Jun 2023 14:22:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"field\": \"error\",\n        \"message\": \"ORA-02292: restrição de integridade (RM94898.FK8ODD0XEYYBH1JJRFFCLW2S34) violada - registro filho localizado\\n\"\n    }\n]"
+						}
+					]
+				}
+			]
+		}
+	]
+}
