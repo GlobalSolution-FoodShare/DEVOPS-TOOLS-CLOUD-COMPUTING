@@ -25,7 +25,7 @@
 # Inicialização:
 
 ```
-git clone https://github.com/GlobalSolution-FoodShare/DEVOPS-TOOLS-CLOUD-COMPUTING-.git
+git clone https://github.com/GlobalSolution-FoodShare/DEVOPS-TOOLS-CLOUD-COMPUTING.git
 ```
 ```
 cd DEVOPS-TOOLS-CLOUD-COMPUTING-/foodshare
