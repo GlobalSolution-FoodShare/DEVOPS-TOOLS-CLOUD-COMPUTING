@@ -28,7 +28,7 @@
 git clone https://github.com/GlobalSolution-FoodShare/DEVOPS-TOOLS-CLOUD-COMPUTING.git
 ```
 ```
-cd DEVOPS-TOOLS-CLOUD-COMPUTING-/foodshare
+cd DEVOPS-TOOLS-CLOUD-COMPUTING/foodshare
 ```
 ```
 docker compose up --build
